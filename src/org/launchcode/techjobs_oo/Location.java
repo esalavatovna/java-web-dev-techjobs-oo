@@ -11,12 +11,19 @@ public class Location {
         id = nextId;
         nextId++;
     }
-
+    public Location(String value) {
+        this();
+        this.value = value;
+    }
     // TODO: Add a constructor that takes a string as a parameter and assigns it to the 'value' field. The
     //  constructor should also call the empty constructor in order to initialize the 'id' field.
+//    assigns aValue to the value field. However, it ALSO initializes id for the object by calling
+//    the first constructor with the this(); statement. Including this(); in any Employer constructor
+//    makes initializing id a default behavior.
 
 
-    // Custom toString, equals, and hashCode methods:
+
+            // Custom toString, equals, and hashCode methods:
 
     @Override
     public String toString() {
